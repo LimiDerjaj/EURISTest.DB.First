@@ -1,0 +1,29 @@
+﻿@model EURISTest.Models.ProductCatalog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ProductCatalog</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Catalog_id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Catalog_id)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Product_id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Product_id)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
